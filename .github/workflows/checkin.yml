@@ -6,8 +6,7 @@ on:
   # watch:
   #   types: started
   repository_dispatch:
-    types: checkin
-	
+    types: checkin	
 jobs:
   sign_in:
     runs-on: ubuntu-latest
