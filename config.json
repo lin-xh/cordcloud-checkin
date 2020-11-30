@@ -1,9 +1,9 @@
 {
   "domain": "cordcloud.uno",
-  "email":"${env.CORDCLOUD_USERNAME}",
-  "pwd": "${env.CORDCLOUD_PASSWORD}", 
-  "bot_token": "${env.BOT_TOKEN}", 
-  "chat_id": "${env.CHAT_ID}", 
+  "email":${env.CORDCLOUD_USERNAME},
+  "pwd": ${env.CORDCLOUD_PASSWORD}, 
+  "bot_token": ${env.BOT_TOKEN}, 
+  "chat_id": ${env.CHAT_ID}, 
   "msg_prefix": "【CordCloud签到】" 
 
 }
