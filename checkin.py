@@ -30,9 +30,9 @@ def send_tg(msg):
 
 def cordcloud_checkin(email, pwd):
     domain_name = config['domain']
-    postUrl = domain_name + '/auth/login'
-    checkUrl = domain_name + '/user/checkin'
-    queryUrl = domain_name + '/user'
+    postUrl = 'https://' + domain_name + '/auth/login'
+    checkUrl = 'https://' + domain_name + '/user/checkin'
+    queryUrl = 'https://' + domain_name + '/user'
     postData = {
         'email': email,
         'passwd': pwd
