@@ -21,13 +21,15 @@ header = {
     'User-Agent': userAgent,
 }
 
-bot = telegram.Bot(token=config['bot_token'])
+token = os.environ["BOT_TOKEN"]
+chat_id = os.environ["CHAT_ID"]
+cordcloud_email = os.environ["CORDCLOUD_USERNAME"]
+cordcloud_pwd = os.environ["CORDCLOUD_PASSWORD"]
 
-CORDCLOUD_USERNAME = os.environ["CORDCLOUD_USERNAME"]
-CORDCLOUD_PASSWORD = os.environ["CORDCLOUD_PASSWORD"]
+bot = telegram.Bot(token)
 
 def send_tg(msg):
-    bot.send_message(chat_id=config['chat_id'], text=config['msg_prefix'] + '\n' + msg)
+    bot.send_message(chat_id, text=config['msg_prefix'] + '\n' + msg)
 
 
 def cordcloud_checkin(email, pwd):
@@ -82,4 +84,4 @@ def cordcloud_checkin(email, pwd):
 
 if __name__ == "__main__":
     # 从返回结果来看，有登录成功
-    cordcloud_checkin(CORDCLOUD_USERNAME, CORDCLOUD_PASSWORD)
+    cordcloud_checkin(cordcloud_email, cordcloud_pwd)
