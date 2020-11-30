@@ -24,4 +24,6 @@ jobs:
       env:
         CORDCLOUD_USERNAME: ${{ secrets.CORDCLOUD_USERNAME }}
         CORDCLOUD_PASSWORD: ${{ secrets.CORDCLOUD_PASSWORD }}
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        CHAT_ID: ${{ secrets.CHAT_ID }}
       run: python checkin.py
