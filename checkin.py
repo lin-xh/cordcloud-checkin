@@ -23,6 +23,8 @@ header = {
 
 bot = telegram.Bot(token=config['bot_token'])
 
+CORDCLOUD_USERNAME = os.environ["CORDCLOUD_USERNAME"]
+CORDCLOUD_PASSWORD = os.environ["CORDCLOUD_PASSWORD"]
 
 def send_tg(msg):
     bot.send_message(chat_id=config['chat_id'], text=config['msg_prefix'] + '\n' + msg)
@@ -80,4 +82,4 @@ def cordcloud_checkin(email, pwd):
 
 if __name__ == "__main__":
     # 从返回结果来看，有登录成功
-    cordcloud_checkin(config['email'], config['pwd'])
+    cordcloud_checkin(CORDCLOUD_USERNAME, CORDCLOUD_PASSWORD)
