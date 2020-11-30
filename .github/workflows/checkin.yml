@@ -18,7 +18,9 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies
       run: python -m pip install --upgrade requests
-    - name: Hao4k auto sign in
+    - name: Install telegram
+      run: pip3 install python-telegram-bot
+    - name: cordcloud auto sign in
       env:
         CORDCLOUD_USERNAME: ${{ secrets.CORDCLOUD_USERNAME }}
         CORDCLOUD_PASSWORD: ${{ secrets.CORDCLOUD_PASSWORD }}
