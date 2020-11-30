@@ -1,5 +1,5 @@
 {
-  "domain": "cordcloud.uno",
+  "domain": "www.cordcloud.uno",
   "email":"${env.CORDCLOUD_USERNAME}",
   "pwd": "${env.CORDCLOUD_PASSWORD}", 
   "bot_token": "1455747046:AAEjpftICeNGHLp9nwm5WinxrexXGGtW32o", 
