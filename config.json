@@ -1,9 +1,5 @@
 {
   "domain": "www.cordcloud.pro",
-  "email":"${CORDCLOUD_USERNAME}",
-  "pwd": "${CORDCLOUD_PASSWORD}", 
-  "bot_token": "", 
-  "chat_id": "${CHAT_ID}", 
   "msg_prefix": "【CordCloud签到】" 
 
 }
