@@ -34,7 +34,8 @@
 | CHAT_ID             | chat ID                                     |
 
 ### 运行 
-执行 py 文件即可
+每天10点自动签到，如果需要其他时间，修改.github/workflows/checkin.yml中的第5行
+4    schedule:
+5        - cron: '0 2 * * *'
 
-### tips
-定时任务配置执行该脚本定时签到
+
