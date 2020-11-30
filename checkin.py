@@ -80,4 +80,4 @@ def cordcloud_checkin(email, pwd):
 
 if __name__ == "__main__":
     # 从返回结果来看，有登录成功
-    cordcloud_checkin(env.CORCLOUD_USERNAME, env.CORDCLOUD_PASSWORD)
+    cordcloud_checkin(CORCLOUD_USERNAME, CORDCLOUD_PASSWORD)
