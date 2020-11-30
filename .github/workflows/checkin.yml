@@ -1,0 +1,26 @@
+name: cordcloud-checkin
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+  # watch:
+  #   types: started
+  repository_dispatch:
+    types: checkin
+	
+jobs:
+  sign_in:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: python -m pip install --upgrade requests
+    - name: Hao4k auto sign in
+      env:
+        CORDCLOUD_USERNAME: $
+        CORDCLOUD_PASSWORD: $
+      run: python checkin.py
