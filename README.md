@@ -1,7 +1,7 @@
 
 ## CordCloud 自动签到脚本 ---  Github Action
 
-签到脚本来自coderbean/cordcloud-checkin，加了个action
+签到脚本来自[coderbean/cordcloud-checkin](https://github.com/coderbean/cordcloud-checkin)，加了个action
 
 ### 配置
 和 py 同级别新建 `config.json` 文件，文件结构如下
