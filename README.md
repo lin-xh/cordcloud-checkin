@@ -1,6 +1,10 @@
+
 ## CordCloud 自动签到脚本 ---  Github Action
+
+签到脚本来自coderbean/cordcloud-checkin，加了个action
+
 ### 配置
-和 py 同级别简历 `config.json` 文件，文件结构如下
+和 py 同级别新建 `config.json` 文件，文件结构如下
 ```
 .
 ├── README.md
@@ -21,7 +25,7 @@
 ### 配置含义
 | 属性         | 含义                                             |
 | ------------ | ------------------------------------------------ |
-| "domain"     | 签到域名，理论上支持 帕斯喵， 绝对支持 cordcloud |
+| "domain"     | 签到域名，支持 cordcloud |
 | "msg_prefix" | tg通知的前缀                                     |
 
 ### Secrets添加
