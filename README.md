@@ -38,6 +38,6 @@
 | CHAT_ID             | chat ID                                     |
 
 ### 运行 
-每天10点自动签到，如果需要其他时间，修改.github/workflows/checkin.yml中的第5行- cron: '0 2 * * *'
+每天8点自动签到，如果需要其他时间，修改.github/workflows/checkin.yml中的第5行- cron: '0 0 * * *'
 
 
