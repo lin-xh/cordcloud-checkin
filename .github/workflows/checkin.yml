@@ -2,7 +2,7 @@ name: cordcloud-checkin
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 0 * * *'
   # watch:
   #   types: started
   repository_dispatch:
